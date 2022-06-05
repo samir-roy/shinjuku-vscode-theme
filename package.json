@@ -2,7 +2,7 @@
 	"name": "shinjuku-vscode-theme",
 	"displayName": "Shinjuku Dark Theme",
 	"description": "A dark Visual Studio Code theme with subtle syntax highlighting and neon structure.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"publisher": "SamirRoy",
 	"author": {
 		"name": "Samir Roy",
@@ -37,6 +37,20 @@
 		"theme",
 		"neon"
 	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Shinjuku",
+				"uiTheme": "vs-dark",
+				"path": "./themes/shinjuku-color-theme.json"
+			},
+			{
+				"label": "Shinjuku - Colored Brackets",
+				"uiTheme": "vs-dark",
+				"path": "./themes/shinjuku-color-theme-color-brackets.json"
+			}
+		]
+	},
 	"scripts": {
 		"clean": "del *.vsix",
 		"package": "vsce package",
