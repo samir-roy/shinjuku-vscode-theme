@@ -1,0 +1,48 @@
+{
+	"name": "shinjuku-vscode-theme",
+	"displayName": "Shinjuku Dark Theme",
+	"description": "A dark Visual Studio Code theme with subtle syntax highlighting and neon structure.",
+	"version": "0.1.0",
+	"publisher": "SamirRoy",
+	"author": {
+		"name": "Samir Roy",
+		"url": "https://www.samirroy.com"
+	},
+	"homepage": "https://github.com/samir-roy/shinjuku-vscode-theme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/samir-roy/shinjuku-vscode-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/samir-roy/shinjuku-vscode-theme/issues"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=15.13",
+		"npm": ">=7.7",
+		"vscode": "^1.12.0"
+	},
+	"galleryBanner": {
+		"color": "#191922",
+		"theme": "dark"
+	},
+	"icon": "assets/extension-marketplace-icon.png",
+	"markdown": "github",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"subtle",
+		"dark",
+		"theme",
+		"neon"
+	],
+	"scripts": {
+		"clean": "del *.vsix",
+		"package": "vsce package",
+		"publish": "vsce publish"
+	},
+	"devDependencies": {
+		"vsce": "^2.9.1"
+	}
+}
